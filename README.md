@@ -75,7 +75,7 @@
   2. Review validator logs to confirm validator node has failed over to another working consensus/execution pair
   3. Review CPU, Memory, and Disk usage on affected server to confirm we're not running out of resources
   4. Find current block height on etherscan, monitor node block height to determine if it's catching up to the chain
-  5. Confirm node software is up to date and that we didn't miss a hard-fork
+  5. Confirm node software is up to date and no hard-forks were missed
   6. Restart affected nodes and monitor logs to ensure it's catching up to chain
 
 ### Beacon Node Peer Count too Low
@@ -90,4 +90,4 @@
   2.  Review consensus node logs to determine if node is actively losing peers
       1.  If so, restart beacon node and monitor logs
   3.  If node is not actively losing peers, monitor node logs for 10-15 minutes to determine if peer count is increasing
-  4.  
+  4.  Restart Consensus node and monitor peers via logs or Beacon API.
