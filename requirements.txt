@@ -1,0 +1,6 @@
+azure-functions
+pydantic
+sqlalchemy
+sqlalchemy-utils
+requests
+web3
